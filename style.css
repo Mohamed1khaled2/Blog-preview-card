@@ -27,7 +27,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 95vh;
 }
 
 .viewer-card-container {
@@ -112,7 +112,6 @@ article .caption {
     margin-right: 0.625em;
     height: 64px;
     width: 65px;
-    background-color: red;
     overflow: hidden;
 }
 
