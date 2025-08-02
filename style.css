@@ -1,3 +1,4 @@
+
 @font-face {
     font-family: figtreeFont ;
     src: url(./assets//fonts/Figtree-VariableFont_wght.ttf);
@@ -35,7 +36,8 @@ main {
     background-color: white;
     justify-content: space-around;
     align-items: center;
-    width: 50.7vw;
+    width:100%; /* i was used vw */
+    max-width: 400px; /*i don't add this chat gpt suggestion for me   */
     padding: 1.5rem;
     /*960/100=9.6/600=62.5*/
     border-radius: 0.625rem;
@@ -46,15 +48,16 @@ main {
 
 .viewer-card-container .img-container {
     width: 100%;
-    height: 40%;
+    height:auto;/* height: 40%; */
     border-radius: 0.625rem;
+    overflow: hidden;
 
 }
 
 
 .viewer-card-container .img-container .img-banner {
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
     border-radius: 0.625rem;
 }
@@ -62,6 +65,7 @@ main {
 
 article {
     margin-top: 1rem;
+    width: 100%;
 }
 
 
@@ -71,23 +75,23 @@ article .label {
     padding: 1vw;
     border-radius: 0.3125rem;
     margin-bottom: 1em;
-    font-size: 2vw;
+    font-size: 0.9rem;
 }
 
 article .date {
     margin-bottom: 1em;
-    font-size: 2vw;
+    font-size: 0.9rem;
 }
 
 article .title {
-    font-size: 3.5vw;
+    font-size: 1.5rem;
     margin-bottom: 1.5rem;
     font-weight: bold;
 }
 
 article .caption {
     color: hsl(0, 0%, 42%);
-    font-size: 2.7vw;
+    font-size: 1rem;
 
 }
 
@@ -99,6 +103,7 @@ article .caption {
     justify-content: flex-start;
     width: 100%;
     margin-top: 1.5em;
+
 }
 
 
@@ -108,6 +113,7 @@ article .caption {
     height: 64px;
     width: 65px;
     background-color: red;
+    overflow: hidden;
 }
 
 
@@ -115,18 +121,63 @@ article .caption {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 35px;
+    border-radius: 50%;
 }
 
 
 .author-container .author-name{
     font-weight: bold;
-    font-size: 2vw;
+    font-size: 0.9rem;
 }
 
 
-/* @media (max-width: 390px) {
-    body {
-        background-color: black;
-    }    
-} */
+/* Media Queries */
+
+/* 📱 Mobile view (up to 375px) */
+@media (max-width: 375px) {
+    .viewer-card-container {
+        padding: 1rem;
+        max-width: 90%;
+    }
+
+    article .title {
+        font-size: 1.25rem;
+    }
+
+    article .caption,
+    article .date,
+    .author-container .author-name {
+        font-size: 0.85rem;
+    }
+
+    .author-container .img-container {
+        height: 36px;
+        width: 36px;
+    }
+}
+
+/* 💻 Desktop view (1440px and up) */
+@media (min-width: 1440px) {
+    .viewer-card-container {
+        max-width: 720px;
+    }
+
+    article .label,
+    article .date,
+    .author-container .author-name {
+        font-size: 1rem;
+    }
+
+    article .title {
+        font-size: 2.25rem;
+    }
+
+    article .caption {
+        font-size: 1.1rem;
+    }
+
+    .author-container .img-container {
+        height: 64px;
+        width: 64px;
+    }
+}
