@@ -1,183 +1,161 @@
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
 
-
-
-
-body {
-    background-color: hsl(47, 88%, 63%);
-    font-family: "Figtree", sans-serif;
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body {
+  background-color: hsl(47, 88%, 63%);
+  font-family: "Figtree", sans-serif;
 }
 
 main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 90svh;
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
 }
 
 .viewer-card-container {
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    justify-content: space-around;
-    align-items: center;
-    width:100%; /* i was used vw */
-    max-width: 400px; /*i don't add this chat gpt suggestion for me   */
-    padding: 1.5rem;
-    border-radius: 1rem;
-    border: 1px solid #000;
-    box-shadow: 10px 12px 1px #000;
-
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  border: 1px solid #000;
+  box-shadow: 10px 12px 1px #000;
 }
 
 .viewer-card-container .img-container {
-    width: 100%;
-    height:auto;/* height: 40%; */
-    border-radius: 1rem;
-    overflow: hidden;
-
+  width: 100%;
+  border-radius: 1rem;
+  overflow: hidden;
 }
-
 
 .viewer-card-container .img-container .img-banner {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 0.625rem;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
 }
-
 
 article {
-    margin-top: 1rem;
-    width: 100%;
+  margin-top: 1rem;
+  width: 100%;
 }
 
-
 article .label {
-    display: inline-block;
-    background-color: hsl(47, 88%, 63%);
-    padding: 1vw;
-    border-radius: 0.3125rem;
-    margin-bottom: 1em;
-    font-size: 0.9rem;
+  display: inline-block;
+  background-color: hsl(47, 88%, 63%);
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.3125rem;
+  margin-bottom: 1em;
+  font-size: 0.9rem;
+  font-weight: 600;
 }
 
 article .date {
-    margin-bottom: 1em;
-    font-size: 0.9rem;
+  margin-bottom: 1em;
+  font-size: 0.9rem;
+  color: #555;
 }
 
 article .title {
-    font-size: 1.5rem;
-    margin-bottom: 1.5rem;
-    font-weight: bold;
-    cursor: pointer;
-    transition: color 0.15s;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.2s ease;
 }
 
-
-.title:hover {
-    color: hsl(47, 88%, 63%);
+article .title:hover {
+  color: hsl(47, 88%, 63%);
 }
-
 
 article .caption {
-    color: hsl(0, 0%, 42%);
-    font-size: 1rem;
-
+  color: hsl(0, 0%, 42%);
+  font-size: 1rem;
+  line-height: 1.5;
 }
-
 
 .author-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    width: 100%;
-    margin-top: 1.5em;
-
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 1.5em;
+  width: 100%;
 }
-
 
 .author-container .img-container {
-    border-radius: 35px;
-    margin-right: 0.625em;
-    height: 64px;
-    width: 65px;
-    overflow: hidden;
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  overflow: hidden;
 }
-
 
 .author-container .img-container .author-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-
-.author-container .author-name{
-    font-weight: bold;
-    font-size: 0.9rem;
+.author-container .author-name {
+  font-weight: bold;
+  font-size: 0.9rem;
 }
 
-
-/* Media Queries */
-
-/* 📱 Mobile view (up to 375px) */
+/* 📱 Medium Mobile (375px – 720px) */
 @media (min-width: 375px) and (max-width: 720px) {
-    .viewer-card-container {
-        padding: 1rem;
-        max-width: 90%;
-    }
+  .viewer-card-container {
+    padding: 1rem;
+    max-width: 65%;
+  }
 
-    article .title {
-        font-size: 1.25rem;
-    }
+  article .title {
+    font-size: 1.25rem;
+  }
 
-    article .caption,
-    article .date,
-    .author-container .author-name {
-        font-size: 0.85rem;
-    }
+  article .caption,
+  article .date,
+  .author-container .author-name {
+    font-size: 0.85rem;
+  }
 
-    .author-container .img-container {
-        height: 36px;
-        width: 36px;
-    }
+  .author-container .img-container {
+    height: 36px;
+    width: 36px;
+  }
 }
 
-
-/* 💻 Desktop view (1440px and up) */
+/* 💻 Desktop (≥ 1440px) */
 @media (min-width: 1440px) {
-    .viewer-card-container {
-        max-width: 720px;
-    }
+  .viewer-card-container {
+    max-width: 720px;
+  }
 
-    article .label,
-    article .date,
-    .author-container .author-name {
-        font-size: 1rem;
-    }
+  article .label,
+  article .date,
+  .author-container .author-name {
+    font-size: 1rem;
+  }
 
-    article .title {
-        font-size: 2.25rem;
-    }
+  article .title {
+    font-size: 2.25rem;
+  }
 
-    article .caption {
-        font-size: 1.1rem;
-    }
+  article .caption {
+    font-size: 1.1rem;
+  }
 
-    .author-container .img-container {
-        height: 64px;
-        width: 64px;
-    }
+  .author-container .img-container {
+    height: 64px;
+    width: 64px;
+  }
 }
