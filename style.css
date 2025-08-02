@@ -1,18 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
 
-@font-face {
-    font-family: figtreeFont ;
-    src: url(./assets//fonts/Figtree-VariableFont_wght.ttf);
-}
 
-@font-face {
-    font-family: figtreeFontitalic ;
-    src: url(./assets//fonts/Figtree-Italic-VariableFont_wght.ttf);
-}
 
 
 body {
     background-color: hsl(47, 88%, 63%);
-    font-family: figtreeFont;
+    font-family: "Figtree", sans-serif;
 
 }
 
@@ -39,8 +32,7 @@ main {
     width:100%; /* i was used vw */
     max-width: 400px; /*i don't add this chat gpt suggestion for me   */
     padding: 1.5rem;
-    /*960/100=9.6/600=62.5*/
-    border-radius: 0.625rem;
+    border-radius: 1rem;
     border: 1px solid #000;
     box-shadow: 10px 12px 1px #000;
 
@@ -49,7 +41,7 @@ main {
 .viewer-card-container .img-container {
     width: 100%;
     height:auto;/* height: 40%; */
-    border-radius: 0.625rem;
+    border-radius: 1rem;
     overflow: hidden;
 
 }
