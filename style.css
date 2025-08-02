@@ -133,7 +133,7 @@ article .caption {
 /* Media Queries */
 
 /* 📱 Mobile view (up to 375px) */
-@media (max-width: 375px) {
+@media (min-width: 375px) and (max-width: 720px) {
     .viewer-card-container {
         padding: 1rem;
         max-width: 90%;
@@ -152,17 +152,6 @@ article .caption {
     .author-container .img-container {
         height: 36px;
         width: 36px;
-    }
-}
-
-@media (min-width: 375px) and (max-width: 720px) {
-    .viewer-card-container {
-        max-width: 80%;
-        padding: 1rem;
-    }
-
-    body {
-        color: red;
     }
 }
 
