@@ -35,7 +35,7 @@ main {
     background-color: white;
     justify-content: space-around;
     align-items: center;
-    width: 30%;
+    width: 53.7vh;
     padding: 1.5rem;
     /*960/100=9.6/600=62.5*/
     height: 69.5vh;
@@ -107,3 +107,10 @@ article .caption {
 .author-container .author-name{
     font-weight: bold;
 }
+
+
+/* @media (max-width: 390px) {
+    body {
+        background-color: black;
+    }    
+} */
