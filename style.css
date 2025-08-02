@@ -26,7 +26,7 @@ main {
   justify-content: space-between;
   align-items: center;
   width: 80%;
-  max-width: 500px;
+  max-width: 660px;
   padding: 1.5rem;
   border-radius: 1rem;
   border: 1px solid #000;
@@ -115,7 +115,7 @@ article .caption {
 @media (min-width: 375px) and (max-width: 720px) {
   .viewer-card-container {
     padding: 1rem;
-    max-width: 70%;
+    width: 85%;
   }
 
   article .title {
@@ -134,8 +134,7 @@ article .caption {
   }
 }
 
-/* 💻 Desktop (≥ 1440px) */
-@media (min-width: 1440px) {
+@media (min-width: 1024px) and (max-width: 1440px) {
   .viewer-card-container {
     max-width: 720px;
   }
