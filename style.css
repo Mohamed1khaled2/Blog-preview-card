@@ -115,7 +115,7 @@ article .caption {
 @media (min-width: 375px) and (max-width: 720px) {
   .viewer-card-container {
     padding: 1rem;
-    max-width: 65%;
+    max-width: 75%;
   }
 
   article .title {
