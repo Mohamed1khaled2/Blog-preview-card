@@ -26,7 +26,7 @@ main {
   justify-content: space-between;
   align-items: center;
   width: 80%;
-  max-width: 660px;
+  max-width: 450px;
   padding: 1.5rem;
   border-radius: 1rem;
   border: 1px solid #000;
@@ -134,9 +134,9 @@ article .caption {
   }
 }
 
-@media (min-width: 1024px) and (max-width: 1440px) {
+@media (min-width: 1224px) and (max-width: 1440px) {
   .viewer-card-container {
-    max-width: 720px;
+    max-width: 550px;
   }
 
   article .label,
