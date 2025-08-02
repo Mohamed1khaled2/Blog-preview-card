@@ -27,7 +27,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 95vh;
+    height: 95svh;
 }
 
 .viewer-card-container {
@@ -133,7 +133,7 @@ article .caption {
 /* Media Queries */
 
 /* 📱 Mobile view (up to 375px) */
-@media (max-width: 410px) {
+@media (max-width: 375px) {
     .viewer-card-container {
         padding: 1rem;
         max-width: 90%;
