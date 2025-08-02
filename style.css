@@ -35,10 +35,9 @@ main {
     background-color: white;
     justify-content: space-around;
     align-items: center;
-    width: 53.7vh;
+    width: 50.7vw;
     padding: 1.5rem;
     /*960/100=9.6/600=62.5*/
-    height: 69.5vh;
     border-radius: 0.625rem;
     border: 1px solid #000;
     box-shadow: 10px 12px 1px #000;
@@ -52,7 +51,8 @@ main {
 
 }
 
-.img-container img{
+
+.viewer-card-container .img-container .img-banner {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -60,28 +60,34 @@ main {
 }
 
 
+article {
+    margin-top: 1rem;
+}
+
+
 article .label {
     display: inline-block;
     background-color: hsl(47, 88%, 63%);
-    padding: 0.5em;
+    padding: 1vw;
     border-radius: 0.3125rem;
     margin-bottom: 1em;
-
+    font-size: 2vw;
 }
 
 article .date {
     margin-bottom: 1em;
+    font-size: 2vw;
 }
 
 article .title {
-    font-size: 2rem;
+    font-size: 3.5vw;
     margin-bottom: 1.5rem;
     font-weight: bold;
 }
 
 article .caption {
     color: hsl(0, 0%, 42%);
-    font-size: 1.2rem;
+    font-size: 2.7vw;
 
 }
 
@@ -96,16 +102,26 @@ article .caption {
 }
 
 
-.author-container img {
-    margin-right: 0.625em;
-    width: 64px;
-    height: 65px;
+.author-container .img-container {
     border-radius: 35px;
-    object-fit: cover;
+    margin-right: 0.625em;
+    height: 64px;
+    width: 65px;
+    background-color: red;
 }
+
+
+.author-container .img-container .author-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 35px;
+}
+
 
 .author-container .author-name{
     font-weight: bold;
+    font-size: 2vw;
 }
 
 
