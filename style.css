@@ -155,16 +155,17 @@ article .caption {
     }
 }
 
-@media (max-width: 720px) {
-    body{
+@media (min-width: 375px) and (max-width: 720px) {
+    .viewer-card-container {
+        max-width: 80%;
+        padding: 1rem;
+    }
+
+    body {
         color: red;
     }
-    .viewer-card-container {
-        padding: 1rem;
-        max-width: 80%;
-    }
-    
 }
+
 
 /* 💻 Desktop view (1440px and up) */
 @media (min-width: 1440px) {
